@@ -44,18 +44,22 @@ class Time
         return count($this->jogadores);
     }
     
-    public function resumo(): void
-    {
-        if($this->countJogadores() > 0){
-            echo "O time '{$this->getNome()}' possui os seguintes jogadores: \n";
-            $contador = 1;
-            foreach($this->jogadores as $jogador){
-                echo "$contador. " . $jogador->getNome() . " - camisa {$jogador->getNumero()} " . "({$jogador->getPosicao()})" . PHP_EOL;
-                $contador++;
+    public function localizarJogador($numero): string
+    {   
+        foreach($this->jogadores as $jogador){
+            if($jogador->getNumero() == $numero){
+                return $jogador->getNome();
+            } else{
+                continue;
             }
-        } else {
-            echo "O time '{$this->getNome()}' ainda não possui jogadores.";
+            return "";
         }
     }
+
+    public function getJogadores(): array
+    {
+        return $this->jogadores;
+    }
+
 }
 ?>
