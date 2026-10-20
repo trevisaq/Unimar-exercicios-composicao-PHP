@@ -10,7 +10,7 @@ $P1 = new Pergunta("Quanto é 10 vezes 2", "20");
 $P2 = new Pergunta("Quanto é 90 divido por 5", "18");
 
 $Q2 = new Questionario("Perguntas geek");
-$P3= new Pergunta("Qual o nome do bruxo mais poderoso de Harry Potter?", "Valdemort");
+$P3 = new Pergunta("Qual o nome do bruxo mais poderoso de Harry Potter?", "Valdemort");
 $P4 = new Pergunta("Quem é o vingador mais forte?", "Hulk");
 
 $Q1->adicionarPergunta($P1);
@@ -43,6 +43,4 @@ echo "\n";
 echo $Q1->resumo();
 echo "\n";
 
-
-    
 ?>
