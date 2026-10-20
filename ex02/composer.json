@@ -1,0 +1,10 @@
+{
+    "name": "souza/ex01",
+    "description": "Exercicio 2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
